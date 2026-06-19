@@ -1,0 +1,11 @@
+streamlit
+pandas
+plotly
+networkx
+pyvis
+matplotlib
+transformers
+sentence-transformers
+torch
+praw
+scikit-learn
