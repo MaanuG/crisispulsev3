@@ -93,7 +93,7 @@ def reset_live_stream(claim: str):
 
 def poll_reddit_for_claim(claim: str):
     raw_queries = generate_search_queries(claim)
-    queries = refine_queries(raw_queries)
+    queries = raw_queries
 
     new_items = []
     query_stats = []
@@ -127,7 +127,6 @@ def score_evidence_collection(user_input: str, evidence: list[EvidenceClaim]):
 
     if scored:
         scored = enrich_relevance(user_input, scored)
-        scored = [item for item in scored if item.relevance_score >= 0.35]
         if scored:
             scored = enrich_with_stance(user_input, scored)
             scored = enrich_ranking(user_input, scored)
@@ -442,7 +441,7 @@ def build_analysis(user_input: str):
     start = time.perf_counter()
 
     raw_queries = generate_search_queries(user_input)
-    queries = refine_queries(raw_queries)
+    queries = raw_queries
 
     evidence: list[EvidenceClaim] = []
     query_stats = []
