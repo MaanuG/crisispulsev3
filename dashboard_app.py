@@ -28,15 +28,18 @@ from temporal_engine import compute_temporal_trend
 APP_TITLE = "Crisis Evidence Intelligence Dashboard"
 APP_SUBTITLE = "Search Reddit, measure evidence quality, and explain the claim-level decision in one place."
 
+
 SAMPLE_PROMPTS = [
     "The Philippines Earthquake is causing huge casualties",
-    "The wildfire near Riverside is spreading quickly and evacuations are underway",
-    "Flood warnings have been issued for the northern communities",
-    "The water supply has been contaminated in the city",
-    "The major highway is closed after the accident",
-    "Rail service has been suspended across the region",
-    "A severe storm is causing damage and power outages",
-    "There was a shooting downtown and multiple injuries were reported",
+    "Wildfires near Spokane have destroyed homes and triggered mass evacuations",
+    "Floodwaters along the Yangtze River are threatening major population centers",
+    "Mexico City is facing a worsening water crisis as reservoirs reach historic lows",
+    "Shipping delays at the Port of Los Angeles are disrupting supply chains nationwide",
+    "Gang violence in Port-au-Prince has displaced thousands of Haitian families",
+    "Hospitals in Gaza are running out of critical medical supplies",
+    "The Philippine government is hiding the true earthquake death toll",
+    "Developers intentionally started the Spokane wildfires to clear land",
+    "A cyberattack may have contributed to recent power outages in Spain and Portugal"
 ]
 
 
